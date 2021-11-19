@@ -54,6 +54,15 @@ class Autentifikasi extends CI_Controller
         $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-message" role="alert">Email tidak terdaftar!!</div>');
         redirect('autentifikasi');
     }
+
+    public function blok()
+ {
+ $this->load->view('autentifikasi/blok');
+ }
+ public function gagal()
+ {
+ $this->load->view('autentifikasi/gagal');
+ }
 }
 
 }
